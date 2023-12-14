@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import source from '../assets/icon-source.svg'
+import source from '../../public/assets/icon-source.svg'
 import { Main, Container, ImgCont, InfoCont, H1, P, SourceCont, SourceSpan, WikiSpan, BtnCont, Btn, BtnSpan1, BtnSpan2, StatsCont, StatsItemSty, StatsSpan1, StatsSpan2 } from './styledComponents/StyledComponents' 
 
 const Content = ({data, index}) => {
