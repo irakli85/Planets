@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import bg from '../../assets/background-stars.svg'
 
 const GlobalStyles = createGlobalStyle`
 
@@ -32,7 +33,7 @@ const GlobalStyles = createGlobalStyle`
       width: 100%;
       height: auto;  
       background: var(--black-pearl);     
-      background-image: url('../../src/assets/background-stars.svg')
+      background-image: url(${bg})
     }  
 `;
 
