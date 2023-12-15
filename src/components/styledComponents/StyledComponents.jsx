@@ -84,6 +84,7 @@ export const Btn = styled.div`
   &:hover{
     background-color: rgba(216, 216, 216, 0.2)
   }
+  background: ${(props) => props.background}
 
 `
 

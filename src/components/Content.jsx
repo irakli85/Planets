@@ -1,10 +1,12 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, useAsyncError } from 'react-router-dom'
 import source from '../../public/images/icon-source.svg'
 import { Main, Container, ImgCont, InfoCont, H1, P, SourceCont, SourceSpan, WikiSpan, BtnCont, Btn, BtnSpan1, BtnSpan2, StatsCont, StatsItemSty, StatsSpan1, StatsSpan2 } from './styledComponents/StyledComponents'
 
 
-const Content = ({data, index}) => {
+const Content = ({data, index, active}) => {
+ 
+  
   return (
     <Main>
 
@@ -26,9 +28,9 @@ const Content = ({data, index}) => {
           </SourceCont>
 
           <BtnCont>
-            <Button num='01' desc='OVERVIEW'/>
-            <Button num='02' desc='Internal Structure'/>
-            <Button num='03' desc='Surface Geology'/>
+            <Button  num='01' desc='overview' color={active === 'overview' ? data[index].color : "transparant"}/>
+            <Button num='02' desc='Internal Structure' color={active === 'internal' ? data[index].color : "transparant"} />
+            <Button num='03' desc='Surface Geology' color={active === 'surface' ? data[index].color : "transparant"} />
           </BtnCont>
 
         </InfoCont>
@@ -55,9 +57,9 @@ const StatsItem = ({title, stats}) => {
   )
 }
 
-const Button = ({num, desc}) => {
+const Button = ({num, desc, color}) => {
   return(
-    <Btn>
+    <Btn background={color} >
       <BtnSpan1>{num}</BtnSpan1>
       <BtnSpan2>{desc}</BtnSpan2>
     </Btn>
