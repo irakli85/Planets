@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import source from '../assets/icon-source.svg'
-import { Main, Container, ImgCont, InfoCont, H1, P, SourceCont, SourceSpan, WikiSpan, BtnCont, Btn, BtnSpan1, BtnSpan2, StatsCont, StatsItemSty, StatsSpan1, StatsSpan2 } from './styledComponents/StyledComponents' 
+import { Main, Container, ImgCont, InfoCont, H1, P, SourceCont, SourceSpan, WikiSpan, BtnCont, Btn, BtnSpan1, BtnSpan2, StatsCont, StatsItemSty, StatsSpan1, StatsSpan2 } from './styledComponents/StyledComponents'
+
 
 const Content = ({data, index}) => {
   return (
@@ -9,7 +10,7 @@ const Content = ({data, index}) => {
 
       <Container>
         <ImgCont>
-          <img src={`../src/assets/${data[index].images.planet}`} alt={data[index].images.planet} />
+          <img src={`../src/assets/planet-${data[index].images.planet}.svg`} alt={data[index].images.planet} />
         </ImgCont>
 
         <InfoCont>

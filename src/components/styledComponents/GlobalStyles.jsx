@@ -8,14 +8,14 @@ const GlobalStyles = createGlobalStyle`
         --black-pearl: #070724;
         --bright-gray: #38384F;
         --waterloo: #838391;
-        --pelorous: #419EBB;
-        --tulip-tree: #EDA249;
-        --purple-heart: #6D2ED5;
-        --valencia: #D14C32;
-        --flame-pea: #D83A34;
-        --piper: #CD5120;
-        --java: #1EC1A2;
-        --royal-blue: #2D68F0;
+        --mercury: #419EBB;
+        --venus: #EDA249;
+        --earth: #6D2ED5;
+        --mars: #D14C32;
+        --jupiter: #D83A34;
+        --saturn: #CD5120;
+        --uranus: #1EC1A2;
+        --neptune: #2D68F0;
     }
 
 

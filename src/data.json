@@ -18,7 +18,7 @@
     "radius": "2,439.7 KM",
     "temperature": "430°c",
     "images": {
-      "planet": "planet-mercury.svg",
+      "planet": "mercury",
       "internal": "./src/assets/planet-mercury-internal.svg",
       "geology": "./src/assets/geology-mercury.png"
     }
