@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import bg from '../../../public/assets/background-stars.svg'
+import bg from '../../../public/images/background-stars.svg'
 
 const GlobalStyles = createGlobalStyle`
 
