@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import bg from '../../../public/images/background-stars.svg'
+import bg from '/images/background-stars.svg'
 
 const GlobalStyles = createGlobalStyle`
 
@@ -16,6 +16,9 @@ const GlobalStyles = createGlobalStyle`
         --saturn: #CD5120;
         --uranus: #1EC1A2;
         --neptune: #2D68F0;
+        --opacity02: rgba(255, 255, 255, 0.2);
+        --opacity05: rgba(255, 255, 255, 0.5);
+        --btnHover: rgba(216, 216, 216, 0.5);
     }
 
 
